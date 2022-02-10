@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "TrajanBold";
+  src: url("./fonts/Trajan_Bold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "TrajanBold";
+}
+.app {
+  width: 800px;
+  height: 450px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.game {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: aquamarine;
+  background-image: url("./images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.legals {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+.simba {
+  position: absolute;
+  bottom: 0;
+  left: 20px;
+  z-index: 1;
+}
+
+.simbasBack {
+  position: absolute;
+  bottom: 0;
+  left: 300px;
+}
+
+.logo {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.menu {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  bottom: 20px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.interactiveItem {
+  font-family: "TrajanBold";
+  padding: 10px;
+  background: transparent;
+  color: #fdb914;
+  font-size: 23px;
+  border: 4px solid #fdb914;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.menuItem {
+  margin: 0 0 10px 0;
+  border-right: none;
+}
+
+.hover:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.text {
+  margin: 0 0 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.text p {
+  font-size: 20px;
+}
+
+.cinema {
+  color: white;
+}
+
+.minigame {
+  color: #3b0b06;
+}
+
+.swiper {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  position: relative;
+  background-color: #fdb914;
+}
+
+.swiper-slide:first-child {
+  background-image: url("./images/characters/nala/background.png");
+}
+
+.swiper-slide:nth-child(2) {
+  background-image: url("./images/characters/mufasa/background.png");
+}
+
+.swiper-slide:nth-child(3) {
+  background-image: url("./images/characters/zazu/background.png");
+}
+
+.swiper-slide:nth-child(4) {
+  background-image: url("./images/characters/timon/background.png");
+}
+
+.swiper-slide:nth-child(5) {
+  background-image: url("./images/characters/scar/background.png");
+}
+
+.swiper-slide:nth-child(6) {
+  background-image: url("./images/characters/rafiki/background.png");
+}
+
+.swiper-slide:nth-child(7) {
+  background-image: url("./images/characters/pumba/background.png");
+}
+
+.character {
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+.unique {
+  left: 10px;
+}
+
+.legalsInSlider {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.smallLogo {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+
+.swipeToMeet {
+  position: absolute;
+  top: 44px;
+  left: 220px;
+  text-align: center;
+  color: #fdb914;
+  text-transform: uppercase;
+}
+
+.goBack {
+  position: absolute;
+  bottom: 30px;
+  border-left: none;
+}
+
+.findOutMore {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  border-right: none;
+}
+
+.name {
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Arial";
+  text-transform: uppercase;
+}
+
+.wrapper {
+  position: absolute;
+  top: 90px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.descriptionWrapper {
+  display: flex;
+}
+
+.descriptionWrapper img {
+  cursor: pointer;
+  z-index: 1;
+}
+
+.description {
+  width: 250px;
+  color: #fdb914;
+  text-transform: none;
+  font-size: 12px;
+  text-align: center;
+}

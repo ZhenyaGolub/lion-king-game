@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+    <title>Lion King</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="game" id="background">
+        <img
+          class="legals animate__animated animate__fadeInRight animate__delay-3s"
+          src="./images/legals.png"
+          alt="legals"
+        />
+        <img
+          class="simba animate__animated animate__fadeIn"
+          src="./images/simba.png"
+          alt="simba"
+        />
+        <img
+          class="simbasBack"
+          src="./images/simbas_back.png"
+          alt="simbasBack"
+        />
+        <img
+          class="logo animate__animated animate__fadeIn"
+          src="./images/logo.png"
+          alt="logo"
+        />
+
+        <div class="menu">
+          <div class="text animate__animated animate__fadeIn">
+            <p class="cinema">in cinemas july 17</p>
+            <p class="minigame">race nala home minigame!</p>
+          </div>
+          <button
+            class="interactiveItem menuItem animate__animated animate__fadeInRight hover"
+          >
+            Play the minigame
+          </button>
+          <button
+            class="interactiveItem menuItem animate__animated animate__fadeInRight animate__delay-1s hover"
+            id="meet"
+          >
+            Meet the characters
+          </button>
+          <button
+            class="interactiveItem menuItem animate__animated animate__fadeInRight animate__delay-2s hover"
+            style="color: white"
+          >
+            Find out more
+          </button>
+        </div>
+      </div>
+      <div class="swiper" id="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <p class="swipeToMeet">Swipe to meet<br />the characters!</p>
+            <div class="wrapper">
+              <p class="name">Nala</p>
+              <div class="descriptionWrapper">
+                <img
+                  id="left"
+                  src="./images/characters/left_arrow.png"
+                  alt="left"
+                  style="opacity: 0.3"
+                />
+                <p class="description">
+                  Nala befriends Simba as a young cub. Playful, competitive and
+                  equally matched, they are deemed a pair long before the idea
+                  ever occurs to them. A strong and self-assured cub, grows into
+                  a powerful lioness who encourages Simba to be who he’s meant
+                  to be.
+                </p>
+                <img
+                  id="right"
+                  src="./images/characters/right_arrow.png"
+                  alt="right"
+                />
+              </div>
+            </div>
+            <img
+              class="smallLogo"
+              src="./images/characters/small_logo.png"
+              alt="smallLogo"
+            />
+            <img
+              class="character unique"
+              src="./images/characters/nala/nala.png"
+              alt="nala"
+            />
+            <img
+              class="legalsInSlider"
+              src="./images/legals.png"
+              alt="legals"
+            />
+            <button class="interactiveItem goBack hover" id="goBack">
+              Go back
+            </button>
+            <button
+              class="interactiveItem findOutMore hover"
+              style="color: white"
+            >
+              Find out more
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <p class="swipeToMeet">Swipe to meet<br />the characters!</p>
+            <div class="wrapper">
+              <p class="name">Mufasa</p>
+              <div class="descriptionWrapper">
+                <img
+                  id="left"
+                  src="./images/characters/left_arrow.png"
+                  alt="left"
+                />
+                <p class="description">
+                  Mufasa is the intelligent and capable king of Pride Rock and
+                  father to Simba. Mufasa is always up for some fun with his
+                  cub. He’s driven to teach Simba everything he knows in hopes
+                  that his son will one day lead the Pride Lands with compassion
+                  and integrity.
+                </p>
+                <img
+                  id="right"
+                  src="./images/characters/right_arrow.png"
+                  alt="right"
+                />
+              </div>
+            </div>
+            <img
+              class="smallLogo"
+              src="./images/characters/small_logo.png"
+              alt="smallLogo"
+            />
+            <img
+              class="character"
+              src="./images/characters/mufasa/mufasa.png"
+              alt="mufasa"
+            />
+            <img
+              class="legalsInSlider"
+              src="./images/legals.png"
+              alt="legals"
+            />
+            <button class="interactiveItem goBack hover" id="goBack">
+              Go back
+            </button>
+            <button
+              class="interactiveItem findOutMore hover"
+              style="color: white"
+            >
+              Find out more
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <p class="swipeToMeet">Swipe to meet<br />the characters!</p>
+            <div class="wrapper">
+              <p class="name">Zazu</p>
+              <div class="descriptionWrapper">
+                <img
+                  id="left"
+                  src="./images/characters/left_arrow.png"
+                  alt="left"
+                />
+                <p class="description">
+                  Zazu is a red-billed hornbill and Mufasa’s right wing, so to
+                  speak. He is the eyes and ears of the kingdom, reporting the
+                  good and the not-so-good news of the day.
+                </p>
+                <img
+                  id="right"
+                  src="./images/characters/right_arrow.png"
+                  alt="right"
+                />
+              </div>
+            </div>
+            <img
+              class="smallLogo"
+              src="./images/characters/small_logo.png"
+              alt="smallLogo"
+            />
+            <img
+              class="character"
+              src="./images/characters/zazu/zazu.png"
+              alt="zazu"
+            />
+            <img
+              class="legalsInSlider"
+              src="./images/legals.png"
+              alt="legals"
+            />
+            <button class="interactiveItem goBack hover" id="goBack">
+              Go back
+            </button>
+            <button
+              class="interactiveItem findOutMore hover"
+              style="color: white"
+            >
+              Find out more
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <p class="swipeToMeet">Swipe to meet<br />the characters!</p>
+            <div class="wrapper">
+              <p class="name">Timon</p>
+              <div class="descriptionWrapper">
+                <img
+                  id="left"
+                  src="./images/characters/left_arrow.png"
+                  alt="left"
+                />
+                <p class="description">
+                  A wisecracking meerkat who discovers a downtrodden Simba after
+                  he flees Pride Rock in search of a different life. Timon’s no
+                  fool, having a lion in your corner can’t be a bad thing—even
+                  if he is destined for greatness.
+                </p>
+                <img
+                  id="right"
+                  src="./images/characters/right_arrow.png"
+                  alt="right"
+                />
+              </div>
+            </div>
+            <img
+              class="smallLogo"
+              src="./images/characters/small_logo.png"
+              alt="smallLogo"
+            />
+            <img
+              class="character"
+              src="./images/characters/timon/timon.png"
+              alt="timon"
+            />
+            <img
+              class="legalsInSlider"
+              src="./images/legals.png"
+              alt="legals"
+            />
+            <button class="interactiveItem goBack hover" id="goBack">
+              Go back
+            </button>
+            <button
+              class="interactiveItem findOutMore hover"
+              style="color: white"
+            >
+              Find out more
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <p class="swipeToMeet">Swipe to meet<br />the characters!</p>
+            <div class="wrapper">
+              <p class="name">Scar</p>
+              <div class="descriptionWrapper">
+                <img
+                  id="left"
+                  src="./images/characters/left_arrow.png"
+                  alt="left"
+                />
+                <p class="description">
+                  Scar is the overlooked and undervalued brother to King Mufasa.
+                  He has long believed that he is the rightful ruler of the
+                  Pride Lands. When Simba is born, he hatches a plan to dispose
+                  of both Mufasa and the new cub with help from his hyena
+                  minions.
+                </p>
+                <img
+                  id="right"
+                  src="./images/characters/right_arrow.png"
+                  alt="right"
+                />
+              </div>
+            </div>
+            <img
+              class="smallLogo"
+              src="./images/characters/small_logo.png"
+              alt="smallLogo"
+            />
+            <img
+              class="character"
+              src="./images/characters/scar/scar.png"
+              alt="scar"
+            />
+            <img
+              class="legalsInSlider"
+              src="./images/legals.png"
+              alt="legals"
+            />
+            <button class="interactiveItem goBack hover" id="goBack">
+              Go back
+            </button>
+            <button
+              class="interactiveItem findOutMore hover"
+              style="color: white"
+            >
+              Find out more
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <p class="swipeToMeet">Swipe to meet<br />the characters!</p>
+            <div class="wrapper">
+              <p class="name">Rafiki</p>
+              <div class="descriptionWrapper">
+                <img
+                  id="left"
+                  src="./images/characters/left_arrow.png"
+                  alt="left"
+                />
+                <p class="description">
+                  Rafiki is a wise primate shaman and royal advisor to Mufasa.
+                  He’s there when Simba is born, and he’s there for the future
+                  king when he finds himself at a crossroads.
+                </p>
+                <img
+                  id="right"
+                  src="./images/characters/right_arrow.png"
+                  alt="right"
+                />
+              </div>
+            </div>
+            <img
+              class="smallLogo"
+              src="./images/characters/small_logo.png"
+              alt="smallLogo"
+            />
+            <img
+              class="character"
+              src="./images/characters/rafiki/rafiki.png"
+              alt="rafiki"
+            />
+            <img
+              class="legalsInSlider"
+              src="./images/legals.png"
+              alt="legals"
+            />
+            <button class="interactiveItem goBack hover" id="goBack">
+              Go back
+            </button>
+            <button
+              class="interactiveItem findOutMore hover"
+              style="color: white"
+            >
+              Find out more
+            </button>
+          </div>
+          <div class="swiper-slide">
+            <p class="swipeToMeet">Swipe to meet<br />the characters!</p>
+            <div class="wrapper">
+              <p class="name">Pumba</p>
+              <div class="descriptionWrapper">
+                <img
+                  id="left"
+                  src="./images/characters/left_arrow.png"
+                  alt="left"
+                />
+                <p class="description">
+                  Pumbaa is a perpetually gassy warthog and best friend to
+                  meerkat Timon. Following his buddy’s lead, Pumbaa befriends
+                  young Simba—just as soon as it’s established that the little
+                  lion isn’t planning to eat them.
+                </p>
+                <img
+                  id="right"
+                  src="./images/characters/right_arrow.png"
+                  alt="right"
+                  style="opacity: 0.3"
+                />
+              </div>
+            </div>
+            <img
+              class="smallLogo"
+              src="./images/characters/small_logo.png"
+              alt="smallLogo"
+            />
+            <img
+              class="character"
+              src="./images/characters/pumba/pumba.png"
+              alt="pumba"
+            />
+            <img
+              class="legalsInSlider"
+              src="./images/legals.png"
+              alt="legals"
+            />
+            <button class="interactiveItem goBack hover" id="goBack">
+              Go back
+            </button>
+            <button
+              class="interactiveItem findOutMore hover"
+              style="color: white"
+            >
+              Find out more
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
